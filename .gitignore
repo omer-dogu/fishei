@@ -5,3 +5,5 @@
 # Build
 /Debug/
 /Release/
+
+*.jpg
