@@ -1,0 +1,7 @@
+# IDE/CubeIDE
+.settings/
+*.launch
+
+# Build
+/Debug/
+/Release/
