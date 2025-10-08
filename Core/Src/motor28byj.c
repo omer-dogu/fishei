@@ -73,10 +73,13 @@ static int updateMotorHalfStep(StepperMotor* motor)
 
 void checkMotorHalfStep(void)
 {
+	int ret1, ret2;
     if(tim2Elapsed) {
         tim2Elapsed = 0;
+        ret1 = updateMotorHalfStep(&motor1);
+        ret2 = updateMotorHalfStep(&motor2);
 
-        if (updateMotorHalfStep(&motor1) && updateMotorHalfStep(&motor2))
+        if (ret1 && ret2)
         	stopMotorTimer();
     }
 }

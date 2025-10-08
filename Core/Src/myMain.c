@@ -29,7 +29,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void consoleInit(void)
 {
-    OLED_Start(1);
+    OLED_Start(0);
     setvbuf(stdout, NULL, _IONBF, 0);
 }
 
